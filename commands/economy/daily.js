@@ -10,17 +10,22 @@ const {
   ensureUserData,
 } = require("../../utils/economy");
 
+function getTodayDateString() {
+  const now = new Date();
+  return now.toISOString().split("T")[0]; // "2025-11-04"
+}
+
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("daily")
     .setDescription("Réclame ton gain journalier."),
 
   async execute(interaction) {
-    const guild = interaction.guild; // ✅ manquait ici
+    const guild = interaction.guild;
     const guildId = guild.id;
     const userId = interaction.user.id;
 
-    // ✅ Vérification des rôles éligibles
+    // Vérification des rôles éligibles
     if (!isUserEligible(guild, userId)) {
       return interaction.reply({
         content: "🚫 Tu n’as pas le rôle requis pour utiliser le système d’économie.",
@@ -44,17 +49,20 @@ module.exports = {
     const balances = loadJSON(balancesFile);
     ensureUserData(balances, guildId, userId);
 
-    const now = Date.now();
+    const today = getTodayDateString();
     const userData = balances[guildId][userId];
-    if (userData.lastDaily && now - userData.lastDaily < 24 * 60 * 60 * 1000)
+
+    // Si déjà réclamé aujourd'hui
+    if (userData.lastDailyDate === today) {
       return interaction.reply("⏳ Tu as déjà pris ton daily aujourd’hui, reviens demain !");
+    }
 
     // Ajouter l’argent
     userData.money += gain;
-    userData.lastDaily = now;
+    userData.lastDailyDate = today; // Remplace l’ancien timestamp
     saveJSON(balancesFile, balances);
 
     await interaction.reply(`💸 Tu as gagné **${gain}€** aujourd’hui !`);
-    console.log(`📩 ${interaction.user} a gagné ${gain}€ avec son daily.`);
+    console.log(`📩 ${interaction.user.tag} a gagné ${gain}€ avec son daily.`);
   },
 };
