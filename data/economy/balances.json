@@ -1,31 +1,28 @@
 {
   "1107560020142469123": {
     "527214990516551680": {
-      "money": 1852,
+      "money": 6826,
       "items": {
         "MR96": 0,
         "AR-15": 0,
         "Menottes": 0,
         "Champignon nocturne": 0,
         "MP5": 0,
-        "Crochet de serrure": 10,
+        "Crochet de serrure": 0,
         "L115": 0,
-        "AK74": 2,
         "Graine ce cannabis": 90,
-        "VSS": 2,
-        "Desert Eagle": 1,
-        "AR15": 1,
+        "Desert Eagle": 0,
         "P99": 0,
         "VSS Vintorez": 0,
         "G3A3": 0,
         "Graine de marijuana": 0,
-        "AK-74": 0
+        "AK-74": 0,
+        "VSS": 2
       },
-      "lastDaily": 1762205487705,
-      "lastDailyDate": "2025-11-05"
+      "lastDailyDate": "2025-12-09"
     },
     "302071093852897281": {
-      "money": 3583,
+      "money": 24456,
       "items": {
         "MP5": 0,
         "Menottes": 0,
@@ -35,21 +32,23 @@
         "G3A3": 0,
         "MR96": 0,
         "P99": 0,
-        "AR15": 2,
         "AR-15": 0,
         "Graine de marijuana": 0,
-        "VSS Vintorez": 0
+        "VSS Vintorez": 0,
+        "AK-74": 0,
+        "Mun. de AR-15": 0
       },
       "lastDaily": 1762205115554,
-      "lastDailyDate": "2025-11-05"
+      "lastDailyDate": "2025-12-25"
     },
     "690280130316206251": {
-      "money": 2414,
+      "money": 19674,
       "items": {},
-      "lastDaily": 1761158833660
+      "lastDaily": 1761158833660,
+      "lastDailyDate": "2025-12-25"
     },
     "516291071983091714": {
-      "money": 8096,
+      "money": 15676,
       "items": {
         "MP5": 0,
         "MR96": 0,
@@ -63,11 +62,10 @@
         "AR-15": 0,
         "Desert Eagle": 0
       },
-      "lastDaily": 1762205582341,
-      "lastDailyDate": "2025-11-05"
+      "lastDailyDate": "2025-12-20"
     },
     "508673137274257418": {
-      "money": 3561,
+      "money": 6896,
       "items": {
         "L115": 0,
         "G3A3": 0,
@@ -75,17 +73,26 @@
         "Crochet de serrure": 0,
         "MP5": 0
       },
-      "lastDaily": 1762284336258
+      "lastDaily": 1762284336258,
+      "lastDailyDate": "2025-11-19"
     },
     "871433326974611486": {
-      "money": 978,
+      "money": 1209,
       "items": {
-        "MP5": 1,
-        "G3A3": 1,
-        "Desert Eagle": 1
+        "MP5": 0,
+        "G3A3": 0,
+        "Desert Eagle": 0,
+        "VSS Vintorez": 0,
+        "Graine de marijuana": 0,
+        "Crochet de serrure": 0,
+        "MR96": 1,
+        "P99": 0,
+        "AK-74": 3,
+        "AR-15": 5,
+        "L115": 0
       },
       "lastDaily": 1762208933400,
-      "lastDailyDate": "2025-11-05"
+      "lastDailyDate": "2025-12-23"
     },
     "923642589582880798": {
       "money": 17,
@@ -100,7 +107,7 @@
       "lastDaily": 1761131257043
     },
     "653264364421251107": {
-      "money": 1533,
+      "money": 3183,
       "items": {}
     },
     "1024228969622540328": {
@@ -108,57 +115,69 @@
       "items": {}
     },
     "438412886419832843": {
-      "money": 1876,
+      "money": 15048,
       "items": {
         "Menottes": 0,
         "Desert Eagle": 0,
         "MP5": 0,
         "G3A3": 0,
-        "Graine de marijuana": 15,
         "VSS Vintorez": 0,
         "P99": 0,
         "Crochet de serrure": 0,
         "L115": 0,
         "AR-15": 0,
-        "MR96": 0
+        "MR96": 0,
+        "AK-74": 0
       },
       "lastDaily": 1762247757278,
-      "lastDailyDate": "2025-11-05"
+      "lastDailyDate": "2025-12-25"
     },
     "1280285942283894834": {
-      "money": 950,
+      "money": 2289,
       "items": {},
       "lastDaily": 1761308656923
     },
     "546800063863848970": {
-      "money": 3519,
+      "money": 33937,
       "items": {
-        "Crochet de serrure": 10,
-        "Desert Eagle": 1,
-        "VSS Vintorez": 1
-      }
+        "Crochet de serrure": 0,
+        "Desert Eagle": 0,
+        "VSS Vintorez": 0,
+        "P99": 0,
+        "Graine de marijuana": 0,
+        "AR-15": 0,
+        "MR96": 0,
+        "AK-74": 0,
+        "L115": 0,
+        "MP5": 0,
+        "G3A3": 0
+      },
+      "lastDailyDate": "2025-12-20"
     },
     "1030147675833778286": {
       "money": 19,
       "items": {}
     },
     "1006213750807867452": {
-      "money": 1445,
+      "money": 15956,
       "items": {
         "Desert Eagle": 0,
         "AR-15": 0,
         "VSS Vintorez": 0,
-        "Crochet de serrure": 10,
-        "G3A3": 1,
-        "Graine de marijuana": 15
+        "Crochet de serrure": 0,
+        "G3A3": 0,
+        "Graine de marijuana": 0,
+        "AK-74": 2,
+        "P99": 0
       },
       "lastDaily": 1762239402738,
-      "lastDailyDate": "2025-11-06"
+      "lastDailyDate": "2025-12-14"
     },
     "711337086430609469": {
-      "money": 3056,
+      "money": 7309,
       "items": {},
-      "lastDaily": 1761125561412
+      "lastDaily": 1761125561412,
+      "lastDailyDate": "2025-11-16"
     },
     "859127137978286091": {
       "money": 114,
@@ -170,11 +189,12 @@
       "items": {}
     },
     "86755792337764352": {
-      "money": 1048,
+      "money": 2658,
       "items": {
-        "Crochet de serrure": 10
+        "Crochet de serrure": 0
       },
-      "lastDaily": 1762213734486
+      "lastDaily": 1762213734486,
+      "lastDailyDate": "2025-11-24"
     },
     "1245354062451576882": {
       "money": 9,
@@ -185,23 +205,27 @@
       "items": {}
     },
     "661179934114316309": {
-      "money": 56,
+      "money": 81,
       "items": {}
     },
     "194845041523556353": {
-      "money": 18,
+      "money": 1808,
       "items": {}
     },
     "1069035108016853042": {
-      "money": 5,
+      "money": 294,
       "items": {}
     },
     "1182172641587626034": {
-      "money": 27,
-      "items": {}
+      "money": 130,
+      "items": {
+        "Crochet de serrure": 10,
+        "MP5": 1
+      },
+      "lastDailyDate": "2025-12-01"
     },
     "281409865165963265": {
-      "money": 211,
+      "money": 4893,
       "items": {}
     },
     "427055353088180245": {
@@ -221,8 +245,13 @@
       "items": {}
     },
     "360940938132062221": {
-      "money": 68,
-      "items": {}
+      "money": 2043,
+      "items": {
+        "Graine de marijuana": 30,
+        "P99": 1,
+        "AR-15": 2
+      },
+      "lastDailyDate": "2025-12-23"
     },
     "169448777520906241": {
       "money": 4,
@@ -257,7 +286,7 @@
       "items": {}
     },
     "780605415699775510": {
-      "money": 442,
+      "money": 447,
       "items": {}
     },
     "701003395531800588": {
@@ -322,14 +351,14 @@
       "items": {}
     },
     "307587290148896769": {
-      "money": 87305,
+      "money": 38287,
       "items": {
         "P99": 0,
-        "Graine de marijuana": 30,
-        "AR-15": 0,
-        "AK-74": 0,
-        "G3A3": 0,
-        "MR96": 0,
+        "Graine de marijuana": 15,
+        "AR-15": 7,
+        "AK-74": 7,
+        "G3A3": 1,
+        "MR96": 3,
         "Crochet de serrure": 10,
         "Desert Eagle": 0,
         "MP5": 0,
@@ -337,7 +366,7 @@
         "L115": 0
       },
       "lastDaily": 1762192300724,
-      "lastDailyDate": "2025-11-06"
+      "lastDailyDate": "2025-12-09"
     },
     "928375158073335828": {
       "money": 14,
@@ -352,12 +381,19 @@
       "items": {}
     },
     "358146124944769034": {
-      "money": 6,
-      "items": {}
+      "money": 5810,
+      "items": {},
+      "lastDailyDate": "2025-12-17"
     },
     "821644478271455263": {
-      "money": 556,
-      "items": {}
+      "money": 3963,
+      "items": {
+        "Graine de marijuana": 45,
+        "L115": 1,
+        "AK-74": 1,
+        "VSS Vintorez": 1
+      },
+      "lastDailyDate": "2025-12-12"
     },
     "868542001677737985": {
       "money": 57,
@@ -368,15 +404,40 @@
       "items": {}
     },
     "265585601779204097": {
-      "money": 9,
+      "money": 226,
       "items": {}
     },
     "268168006729728000": {
-      "money": 294,
+      "money": 3474,
       "items": {}
     },
     "308664966435831808": {
-      "money": 7,
+      "money": 33,
+      "items": {}
+    },
+    "878738738233085953": {
+      "money": 13913,
+      "items": {}
+    },
+    "269964417213530122": {
+      "money": 75,
+      "items": {}
+    },
+    "922887367298265139": {
+      "money": 1162,
+      "items": {}
+    },
+    "1445203830416605194": {
+      "money": 2034,
+      "items": {
+        "Desert Eagle": 1,
+        "Crochet de serrure": 10,
+        "AR-15": 1
+      },
+      "lastDailyDate": "2025-12-25"
+    },
+    "1302200677191254047": {
+      "money": 50000,
       "items": {}
     }
   }

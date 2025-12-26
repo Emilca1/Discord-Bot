@@ -48,19 +48,57 @@ for (const file of eventFiles) {
   }
 }
 
+// Handler des boutons
+client.buttons = [];
+
+const buttonFiles = fs.readdirSync("./buttons").filter(f => f.endsWith(".js"));
+
+for (const file of buttonFiles) {
+  const button = require(`./buttons/${file}`);
+  client.buttons.push(button);
+}
+
+
 // InteractionCreate pour les commandes
 client.on("interactionCreate", async interaction => {
-  if (!interaction.isChatInputCommand()) return;
 
-  const command = client.commands.get(interaction.commandName);
+  // Slash commands
+  if (interaction.isChatInputCommand()) {
+    const command = client.commands.get(interaction.commandName);
+    if (!command) return;
 
-  if (!command) return;
+    try {
+      await command.execute(interaction, client);
+    } catch (error) {
+      console.error(error);
+      if (!interaction.replied) {
+        await interaction.reply({
+          content: "❌ Une erreur est survenue.",
+          ephemeral: true
+        });
+      }
+    }
+  }
 
-  try {
-    await command.execute(interaction, client);
-  } catch (error) {
-    console.error(error);
-    await interaction.reply({ content: "❌ Une erreur est survenue.", ephemeral: true });
+  // Boutons
+  if (interaction.isButton()) {
+    const button = client.buttons.find(b =>
+      b.customIds.includes(interaction.customId)
+    );
+
+    if (!button) return;
+
+    try {
+      await button.execute(interaction, client);
+    } catch (error) {
+      console.error(error);
+      if (!interaction.replied && !interaction.deferred) {
+        await interaction.reply({
+          content: "❌ Une erreur est survenue.",
+          ephemeral: true
+        });
+      }
+    }
   }
 });
 
