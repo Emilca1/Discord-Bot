@@ -50,10 +50,10 @@ module.exports = {
       return interaction.editReply("⚠️ Aucun utilisateur enregistré sur ce serveur.");
     }
 
-    // Construire et trier la liste par argent (ordre croissant)
+    // Construire et trier la liste par argent (ordre décroissant)
     const sorted = Object.entries(guildBalances)
       .map(([id, data]) => ({ id, money: data.money ?? 0 }))
-      .sort((a, b) => a.money - b.money);
+      .sort((a, b) => b.money - a.money);
 
     // Pagination
     const totalPages = Math.ceil(sorted.length / USERS_PER_PAGE);
