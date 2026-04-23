@@ -44,6 +44,7 @@ function saveLogToFile(message) {
     if (/a gagné \d+€ avec son daily/.test(message)) event = "daily";
     else if (/a gagné \d+€ pour son message/.test(message)) event = "mess";
     else if (/a gagné \d+€ en vocal/.test(message)) event = "voc";
+    else if (/(?:a gagné|a perdu) \d+€ au flipcoin/.test(message)) event = "flip";
 
     // Extraire le gain si présent
     const gainMatch = message.match(/(\d+)€/);
