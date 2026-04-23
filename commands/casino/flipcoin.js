@@ -7,31 +7,20 @@ const {
   ensureUserData,
 } = require("../../utils/economy");
 
-// Coin farmes
+// Coin frames
 const F = {
-  FACE_W: "╔═══════╗\n║ ╭───╮ ║\n║ │ ● │ ║\n║ ╰───╯ ║\n╚═══════╝",
-  FACE_M: "╔═════╗\n║╭───╮║\n║│ ● │║\n║╰───╯║\n╚═════╝",
-  PILE_M: "╔═════╗\n║╭───╮║\n║│ ○ │║\n║╰───╯║\n╚═════╝",
-  PILE_W: "╔═══════╗\n║ ╭───╮ ║\n║ │ ○ │ ║\n║ ╰───╯ ║\n╚═══════╝",
+  FACE: "╔═══════╗\n║ ╭───╮ ║\n║ │ ● │ ║\n║ ╰───╯ ║\n╚═══════╝",
+  PILE: "╔═══════╗\n║ ╭───╮ ║\n║ │ ○ │ ║\n║ ╰───╯ ║\n╚═══════╝",
 };
 
 // Spin animation sequence : frames + delay (ms)
 const SPIN = [
-  [F.FACE_M, 360],
-  [F.PILE_M, 320],
-  [F.PILE_W, 290],
-  [F.PILE_M, 270],
-  [F.FACE_M, 250],
-  [F.FACE_W, 250],
-  [F.FACE_M, 270],
-  [F.PILE_M, 290],
-  [F.PILE_W, 330],
-  [F.PILE_M, 380],
-  [F.FACE_M, 430],
-  [F.FACE_W, 490],
-  [F.FACE_M, 550],
-  [F.PILE_M, 610],
-  [F.PILE_W, 670],
+  [F.PILE, 150],
+  [F.FACE, 150],
+  [F.PILE, 180],
+  [F.FACE, 220],
+  [F.PILE, 280],
+  [F.FACE, 360],
 ];
 
 function wait(ms) {
@@ -109,7 +98,7 @@ module.exports = {
 
     // === ANIMATION ===
     const message = await interaction.reply({
-      embeds: [spinEmbed(F.FACE_W, choix, mise)],
+      embeds: [spinEmbed(F.FACE, choix, mise)],
       fetchReply: true,
     });
 
@@ -119,7 +108,7 @@ module.exports = {
     }
 
     // Final frame
-    const landingFrame = result === "face" ? F.FACE_W : F.PILE_W;
+    const landingFrame = result === "face" ? F.FACE : F.PILE;
     await wait(700);
     await message.edit({ embeds: [spinEmbed(landingFrame, choix, mise)] });
     await wait(900);
